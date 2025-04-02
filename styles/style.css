@@ -1,60 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-/* variables */
-:root {
-  --background-color: #000;
-  --primary-color: #2a2a2a;
-  --secondary-color: #2c2c2c;
-  --text-color: #fff;
-  --text-secondary: #919191;
-  --tag-colors: #c9cacb;
-  --card-color: #080808;
-  --card-secondary-color: #2f2f2f;
-  --hover-color: #2f2f2f;
-  --gradient-b-color: #c3c3c3;
-  --gradient-t-color: #202020;
-  --tag-bg-color: #0e0f10;
-  --video-bg: rgba(24, 24, 24, 0.5);
-  --play-border: #a9a9a9;
-  --play-btn-color: rgba(103, 103, 103, 0.45);
-  --border-color: #1d1d20;
-  --faq-bg-color: #111;
-  --faq-border-color: #2a2a2a;
-  --social-bg-color: #18181a;
-}
-
-/* reset  */
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-ul {
-  list-style: none;
-}
-a {
-  color: var(--text-color);
-  text-decoration: none;
-}
-
-/* Base */
-html,
-body {
-  height: 100%;
-  width: 100%;
-  font-family: "Montserrat", sans-serif;
-  background-color: var(--background-color);
-  color: var(--text-color);
-}
-.container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 0 24px;
-  width: 100%;
-}
 
 .hero {
-  background: url("./assets/Hero.png");
+  background: url("../assets/Hero.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -225,6 +173,7 @@ body {
   border-radius: 10px;
   position: relative;
   outline: 4px solid var(--card-color);
+  overflow: hidden;
 }
 .portfolio-video .border-line {
   height: 100%;

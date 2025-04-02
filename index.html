@@ -3,8 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Capital</title>
+    <!-- styles link  -->
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/container.css" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/variables.css" />
     <!-- fontawesome icon Script  -->
     <script
       src="https://kit.fontawesome.com/191f0bfef4.js"
@@ -13,6 +17,7 @@
   </head>
   <body>
     <main>
+      <!-- Hero  -->
       <section class="hero">
         <img src="./assets/Logo.png" alt="Logo" class="logo" />
         <div class="business-label">
@@ -35,6 +40,9 @@
           Follow more about CR Capital on its social media.
         </p>
       </section>
+
+      <!-- portfolio-section -->
+
       <div class="container">
         <section class="portfolio-section">
           <div class="portfolio-content">
@@ -51,15 +59,28 @@
             </a>
           </div>
           <div class="portfolio-video">
-            <div class="play-icon-wrapper">
+            <iframe
+              width="420"
+              height="280"
+              src="https://www.youtube.com/embed/IrHTT2IEKpE?si=jYf38sdacvn8-BPj"
+              title="YouTube video player"
+              class="video"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            <!-- <div class="play-icon-wrapper">
               <button class="play-icon">
                 <i class="fa-solid fa-play"></i>
               </button>
-            </div>
+            </div> -->
             <div class="border-line"></div>
           </div>
         </section>
       </div>
+
+      <!-- Business Value Section  -->
       <div class="container">
         <section class="companies-number">
           <div class="companies-number-content">
@@ -78,6 +99,9 @@
           </div>
         </section>
       </div>
+
+      <!-- invest-section -->
+
       <div class="container">
         <section class="invest-section">
           <div class="content-area">
@@ -126,6 +150,8 @@
           </div>
         </section>
       </div>
+
+      <!-- business-portfolio -->
       <section class="business-portfolio">
         <div class="container">
           <div class="header">
@@ -204,6 +230,9 @@
           <img src="./assets/left-light.png" alt="light-img" />
         </div>
       </section>
+
+      <!-- faqs-section -->
+
       <div class="container">
         <section class="faqs-section">
           <div class="header">
@@ -280,6 +309,7 @@
         </section>
       </div>
     </main>
+    <!-- footer  -->
     <footer class="footer">
       <div class="footer-logo">
         <img src="./assets/Logo.png" alt="logo" width="150px" />
