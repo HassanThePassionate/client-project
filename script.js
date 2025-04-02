@@ -8,7 +8,7 @@ document.querySelectorAll(".faq").forEach((faq) => {
       answer.style.maxHeight = null;
       answer.style.paddingTop = "0px";
     } else {
-      answer.style.maxHeight = "100px";
+      answer.style.maxHeight = "200px";
       answer.style.paddingTop = "16px";
     }
 
@@ -20,7 +20,7 @@ document.querySelectorAll(".faq").forEach((faq) => {
       answer.style.maxHeight = null;
       answer.style.paddingTop = "0px";
     } else {
-      answer.style.maxHeight = "100px";
+      answer.style.maxHeight = "200px";
       answer.style.paddingTop = "16px";
     }
 
