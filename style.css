@@ -36,10 +36,7 @@ a {
   color: var(--text-color);
   text-decoration: none;
 }
-img {
-  max-width: 100%;
-  height: auto;
-}
+
 /* Base */
 html,
 body {
@@ -70,7 +67,7 @@ body {
   padding-top: 70px;
 }
 .hero .logo {
-  width: 100px;
+  width: 150px;
 }
 .business-label {
   display: flex;
@@ -78,7 +75,9 @@ body {
   align-items: center;
 }
 .business-label-content {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: #22222200;
+  max-width: 300px;
+  min-width: 300px;
   font-size: 10px;
   display: flex;
   align-items: center;
@@ -86,21 +85,19 @@ body {
   padding: 14px 30px;
   margin-top: 20px;
   border-radius: 4px;
-  letter-spacing: 1.5px;
-  border: 1px solid #2f2f2f;
-  stroke: #2f2f2f;
-  stroke-width: 0.4px;
-  backdrop-filter: blur(12px);
+  letter-spacing: 2px;
+  border: 1px solid #6e6e6e69;
+  backdrop-filter: blur(5px);
   font-family: "Inter", sans-serif;
 }
 .business-label-content span {
-  background-color: var(--secondary-color);
-  padding: 3px 8px;
+  background-color: black;
+  padding: 5px 8px;
   border-radius: 2px;
   font-size: 12px;
 }
 .business-label .date {
-  padding: 4px 6px;
+  padding: 5px 15px;
   background-color: var(--text-color);
   color: var(--background-color);
   font-family: "Instrument Sans", sans-serif;
@@ -116,7 +113,7 @@ body {
 }
 .hero-heading {
   font-size: 44px;
-  font-weight: 700;
+  font-weight: 600;
   margin-top: 32px;
   text-align: center;
 }
@@ -128,7 +125,7 @@ body {
   font-size: 16px;
   margin-top: 28px;
   text-align: center;
-  max-width: 760px;
+  max-width: 680px;
   text-transform: capitalize;
 }
 .hero-button {
@@ -166,7 +163,7 @@ body {
 }
 
 .portfolio-number {
-  font-size: 56px;
+  font-size: 62px;
   background: -webkit-linear-gradient(
     var(--gradient-b-color),
     var(--gradient-t-color)
@@ -175,7 +172,7 @@ body {
   -webkit-text-fill-color: transparent;
 }
 .portfolio-heading {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 500;
   margin-top: 12px;
 }
@@ -337,10 +334,18 @@ body {
 .image-area {
   flex: 1;
   margin-left: 140px;
+  position: relative;
 }
-.image-area img {
-  width: 300px;
-  height: 100%;
+.image-area .chart {
+  width: 330px;
+  height: 330px;
+}
+.glowing-effect {
+  position: absolute;
+  top: -280px;
+  left: -450px;
+  height: 150vh;
+  max-width: 1000px;
 }
 .business-portfolio {
   padding-top: 150px;
@@ -413,13 +418,42 @@ body {
   right: 50%;
   transform: translateX(-50%);
 }
+.left-border-line {
+  background: linear-gradient(
+    to top,
+    var(--tag-bg-color),
+    #fff,
+    var(--tag-bg-color)
+  );
+  width: 1.5px;
+  height: 100%;
+  left: 0;
+}
+.right-border-line {
+  background: linear-gradient(
+    to top,
+    var(--tag-bg-color),
+    #fff,
+    var(--tag-bg-color)
+  );
+  width: 1.5px;
+  height: 100%;
+  right: 0;
+  left: 100%;
+}
 .light-image {
   position: absolute;
   top: 50%;
 }
+.light-image img {
+  max-width: 300px;
+  min-width: 300px;
+  width: 100%;
+}
 .right-light-image {
   left: 0;
 }
+
 .left-light-image {
   right: 0;
 }
@@ -448,7 +482,7 @@ body {
   background-color: var(--faq-bg-color);
   border: 1px solid var(--faq-border-color);
   border-radius: 12px;
-  padding: 24px 16px;
+  padding: 18px 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -461,7 +495,7 @@ body {
 }
 .faq-content .question {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 16px;
 }
 .answer {
   max-height: 0;
@@ -470,8 +504,8 @@ body {
 }
 
 .expand-btn {
-  height: 24px;
-  width: 24px;
+  height: 20px;
+  width: 20px;
   border-radius: 50%;
   border: 1px solid var(--border-color);
   display: flex;
@@ -535,9 +569,11 @@ body {
 @media screen and (max-width: 600px) {
   .hero-heading {
     font-size: 32px;
+    padding: 16px;
   }
   .hero-para {
     font-size: 14px;
+    padding: 0 24px;
   }
   .portfolio-section {
     flex-direction: column;
@@ -589,11 +625,44 @@ body {
   .business-cards {
     grid-template-columns: repeat(2, 1fr) !important;
   }
+  .card-2 {
+    order: 2;
+  }
+  .card-6 {
+    order: 6;
+  }
+  .card-5 .business-card-content .border-line {
+    left: 100%;
+    height: 100%;
+    width: 1.5px;
+    background: linear-gradient(
+      to top,
+      var(--tag-bg-color),
+      #fff,
+      var(--tag-bg-color)
+    );
+  }
+  .card-2 .business-card-content .border-line {
+    left: 0;
+    height: 100%;
+    width: 1.5px;
+    background: linear-gradient(
+      to top,
+      var(--tag-bg-color),
+      #fff,
+      var(--tag-bg-color)
+    );
+  }
   .light-image {
     display: none;
   }
   .copy-right {
     text-align: start;
     align-items: flex-start;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .light-image img {
+    display: none;
   }
 }
